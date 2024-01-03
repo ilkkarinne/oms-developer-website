@@ -1,0 +1,11 @@
+ <!-- Masthead-->
+ {%- assign data = site.data.masthead -%}
+ <header class="masthead">
+    <div class="container">
+        <div class="masthead-heading text-uppercase">{{ data.heading }}</div>
+        <div class="masthead-subheading">{{ data.sub-heading }}</div>
+        {%- for b in data.buttons -%}
+        <a class="btn btn-primary btn-xl text-uppercase" href="{{ b.href }}">{{ b.title }}</a>
+        {% endfor %}
+    </div>
+</header>
