@@ -1,0 +1,8 @@
+url: "https://spatineo.github.io/oms-developer-website" # the base hostname & protocol for your site
+home: "https://spatineo.github.io/oms-developer-website/"
+name: "OMS Developer Website"
+plugins:
+- jekyll-sitemap
+- kramdown
+
+

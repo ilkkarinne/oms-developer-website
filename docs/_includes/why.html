@@ -1,0 +1,22 @@
+ <!-- Why-->
+ {%- assign data = site.data.why -%}
+ <section class="page-section" id="why">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">{{ data.heading }}</h2>
+            <h3 class="section-subheading text-muted">{{ data.sub-heading }}</h3>
+        </div>
+        <div class="row text-center">
+            {%- for i in data.items -%}
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fas {{ i.icon }} fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="my-3">{{ i.heading }}</h4>
+                <p class="text-muted">{{ i.text }}</p>
+            </div>
+            {%- endfor -%}
+        </div>
+    </div>
+</section>

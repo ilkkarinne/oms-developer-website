@@ -1,0 +1,13 @@
+heading: "Overview"
+sub-heading: "OGC API Features provides access to collections of geospatial data."
+heading-img:
+  src: "assets/img/overview.png"
+  title: "Source: https://demo.ldproxy.net/daraa"
+  alt: ".."
+items:
+- heading: "Get collections"
+  text: "Lists the collections of data on the server that can be queried, and each describes basic information about the geospatial data collection, like its id and description, as well as the spatial and temporal extents of all the data contained."
+- heading: "Get items"
+  text: "Requests all the data in a given collection. The response format (typically HTML or a GeoJSON feature collection, but GML is supported, too, and extensions can easily supply others) is determined using HTTP content negotiation."
+- heading: "Get feature"
+  text: "Returns a single 'feature' - something in the real-world (a building, a stream, a county, etc.) that typically is described by a geometry plus other properties. This provides a stable, canonical URL to link to the 'thing'."
