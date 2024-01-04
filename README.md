@@ -1,6 +1,8 @@
 # OMS Developer Website
 Observations, Measurements and Samples (OMS) developer website
 
+The theme used is a Node/Pug to Jekyll conversion of the [Agency](https://startbootstrap.com/theme/agency) one page HTML theme for Bootstrap by [Start Bootstrap LLC](https://startbootstrap.com/). 
+
 The contributor understands that any contributions, if accepted by the OGC Membership, MAY be incorporated into OGC documents and that all copyright and intellectual property SHALL be vested to the OGC.
 
 ## Powered by GitHub Pages and Jekyll
