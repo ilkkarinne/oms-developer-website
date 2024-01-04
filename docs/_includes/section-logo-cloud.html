@@ -1,0 +1,24 @@
+<section class="page-section" id="{{ include.id }}">
+    <div class="container">
+        {%- include headings-section.html content=include.content.heading -%}
+        {%- include text-block.html content=include.content.introtext -%}
+        <div class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    {%- for i in include.content.items -%}
+                    <div class="col-md-4 col-sm-6 my-4">
+                        {%- if i.link -%}
+                        <a href="{{ i.link.href }}" title="{{ i.link.title }}">
+                        {%- endif -%}
+                        <img class="img-fluid img-brand d-block mx-auto" src="{{ i.img.src }}" alt="{{ i.img.alt }}" />
+                        {%- if i.link -%}
+                        </a>
+                        {%- endif -%}
+                    </div>
+                    {%- endfor -%}
+                </div>
+            </div>
+        </div>
+        {%- include text-block.html content=include.content.text class="small" -%}
+    </div>
+</section>

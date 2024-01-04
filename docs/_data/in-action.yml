@@ -1,15 +1,19 @@
-heading: "See it In Action"
-sub-heading: "This is a list of server implementations, that provide data. Please <a href=\"mailto:jsimoes@ogc.org\">get in touch</a>, if you would like to add your server to the list."
+heading:
+  main-heading: "See it In Action"
+  sub-heading: "This is a list of server implementations, that provide data. Please <a href=\"mailto:jsimoes@ogc.org\">get in touch</a>, if you would like to add your server to the list."
 items:
-- img-src: "assets/img/ldproxy1.png"
-  img-alt: "..."
-  heading: "Vineyards in Rhineland-Palatinate, Germany"
-  sub-heading: "Powered by Ldproxy"
-  text: "Have you ever wondered where the wine that you are drinking comes from? If the wine comes from the wine-growing regions Mosel, Nahe, Rheinhessen, Pfalz, Ahr, or Mittelrhein you can find this information in this API."
+- img:
+    src: "assets/img/ldproxy1.png"
+    alt: "..."
+  heading:
+    main-heading: "Vineyards in Rhineland-Palatinate, Germany"
+    sub-heading: "Powered by Ldproxy"
+  text:
+  - paragraph: "Have you ever wondered where the wine that you are drinking comes from? If the wine comes from the wine-growing regions Mosel, Nahe, Rheinhessen, Pfalz, Ahr, or Mittelrhein you can find this information in this API."
   buttons:
   - href: "https://demo.ldproxy.net/vineyards"
     title: "Collection Resource"
-    icon: "fa-link"
+    icon: "fa fa-link"
   - href: "https://demo.ldproxy.net/vineyards/api/"
     title: "OpenAPI definition"
-    icon: "fa-code"
+    icon: "fa fa-code"

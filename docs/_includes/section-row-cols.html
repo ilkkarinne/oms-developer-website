@@ -1,0 +1,24 @@
+<section class="page-section" id="{{ include.id }}">
+    <div class="container">
+        {%- include headings-section.html content=include.content.heading -%}
+        <div class="row text-center">
+            {%- for i in include.content.items -%}
+            <div class="col-md-4">
+                {%- if i.link -%}
+                <a href="{{ i.link.href }}" title="{{ i.heading.main-heading }}">
+                {%- endif -%}
+                <span class="fa-stack fa-4x">
+                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                    <i class="{{ i.icon }} fa-stack-1x fa-inverse"></i>
+                </span>
+                {%- include headings-item.html content=i.heading -%}
+                {%- if i.link -%}
+                </a>
+                {%- endif -%}
+                {%- include text-block.html content=i.text -%}
+            </div>
+            {%- endfor -%}
+        </div>
+        {%- include text-block.html content=include.content.text -%}
+    </div>
+</section>

@@ -1,0 +1,26 @@
+<section class="page-section" id="{{include.id}}">
+    <div class="container">
+        {%- include headings-section.html content=include.content.heading -%}
+        <div class="row">
+            {%- for i in include.content.items -%}
+            <div class="col-lg-4">
+                <div class="team-member">
+                    {%- if i.link -%}
+                    <a href="{{ i.link.href }}" title="{{ i.link.title }}" target="{{ i.link.target }}">
+                    {%- endif -%}
+                    <img class="mx-auto rounded-circle" src="{{ i.img.src }}" alt="{{ i.img.alt }}" />
+                    {%- include headings-item.html content=i.heading -%}
+                    {%- if i.link -%}
+                    </a>
+                    {%- endif -%}
+                    {%- include text-block.html content=i.text -%}
+                    {%- for b in i.buttons -%}
+                    <a class="btn btn-dark btn-social mx-2" href="{{ b.href }}" title="{{ b.title }}" target="{{ b.target }}"><i class="{{ b.icon }}"></i></a>
+                    {%- endfor -%}
+                </div>
+            </div>
+            {%- endfor -%}
+        </div>
+        {%- include text-block.html content=include.content.text -%}
+    </div>
+</section>

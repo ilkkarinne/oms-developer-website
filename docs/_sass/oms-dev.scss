@@ -22,3 +22,21 @@
 @import "./sections/team.scss";
 @import "./sections/contact.scss";
 @import "./sections/footer.scss";
+
+// Site customizations
+a {
+    text-decoration: none;
+    color: inherit;
+}
+p {
+    a {
+        text-decoration: underline;
+        color: #3193d4;
+    }
+}
+
+table, .table {
+    th {
+        text-align: center;
+    }
+} 

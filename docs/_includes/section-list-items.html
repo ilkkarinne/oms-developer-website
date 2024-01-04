@@ -1,0 +1,16 @@
+<section class="page-section bg-light" id="{{include.id}}">
+    <div class="container">
+        {%- include headings-section.html content=include.content.heading -%}
+        <div class="text-left">
+            <ul>
+                {%- for i in include.content.items -%}
+                <li>
+                    {%- include headings-item.html content=i.heading -%}
+                    {%- include text-block.html content=i.text -%}
+                </li>
+                {%- endfor -%}
+            </ul>
+        </div>
+        {%- include text-block.html content=include.content.text -%}    
+    </div>
+</section>

@@ -1,22 +1,35 @@
- <!-- Navigation-->
- <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+{%- comment -%}
+ 
+ Include parameters:
+    * home (required): URL of the home link
+    * background-img (optional): object
+        * src: source URL of the image
+        * alt: alternative label of the image
+    * items (optional): object[]
+        * href: URL of the navigation link
+        * label: label of the navigation link
+
+{%- endcomment -%}
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
-        <a class="navbar-brand" href="#page-top">
+        <a class="navbar-brand" href="{{ include.home }}">
             HOME
-            <!--img(src='assets/img/navbar-logo.svg', alt='...')-->
+            {%- if include.background-img -%}
+            <img src="{{ include.background-img.src }}" alt="{{ include.background-img.alt }}" />
+            {%- endif -%}
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu
             <i class="fas fa-bars ms-1"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
+            {%- if include.items -%}
             <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                <li class="nav-item"><a class="nav-link" href="#why">Why</a></li>
-                <li class="nav-item"><a class="nav-link" href="#portfolio">How</a></li>
-                <li class="nav-item"><a class="nav-link" href="#inaction">In Action</a></li>
-                <li class="nav-item"><a class="nav-link" href="#getstarted">Get Started</a></li>
-                <li class="nav-item"><a class="nav-link" href="#getinvolved">Get Involved</a></li>
+                {%- for i in include.items -%}
+                <li class="nav-item"><a class="nav-link" href="{{ i.href }}">{{ i.label }}</a></li>
+                {%- endfor -%}
             </ul>
+            {%- endif -%}
         </div>
         {% if site.github.is_project_page %}
         <a href="{{ site.github.repository_url }}"><img style="position: absolute; top: 0; right: 0; border: 0" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>

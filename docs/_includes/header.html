@@ -4,7 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>{{site.name}}</title>
+        <title>{{ site.name }}</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -15,8 +15,16 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="assets/css/styles.css" rel="stylesheet" />
     </head>
-    <body id="page-top" class="page-{{ pageId }} {{ layout.style }}">
-       {% include navigation.html %}
-       {% include masthead.html %}
+    <body id="page-top" class="page-{{ page.name | split:'.' | first | slugify }} {{ layout.style }}">
+       {% include navigation.html home=site.home items=site.data.navigation.items %}
+       <header class="masthead">
+        <div class="container">
+            <div class="masthead-heading text-uppercase">{{ site.data.front.heading.main-heading }}</div>
+            {%- if site.data.front.heading.sub-heading -%}<div class="masthead-subheading">{{ site.data.front.heading.sub-heading }}</div>{%- endif -%}
+            {%- for b in site.data.front.buttons -%}
+            <a class="btn btn-primary btn-xl text-uppercase" href="{{ b.href }}" title="{{ b.title }}">{{ b.title }}</a>
+            {% endfor %}
+        </div>
+    </header>
 
     

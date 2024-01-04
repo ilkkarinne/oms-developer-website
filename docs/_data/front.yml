@@ -1,0 +1,8 @@
+heading:
+  main-heading: "Observations, Measurements and Samples (OMS)"
+  sub-heading: "The standard model for describing and exchanging observational data (development in progress)"
+buttons:
+- href: "#why"
+  title: "Tell me more"
+- href: "#getstarted"
+  title: "Get started"

@@ -1,0 +1,32 @@
+heading:
+  main-heading: "Get Started"
+  sub-heading: "Here is something to get you started."
+items:
+- heading:
+    main-heading: "Complete an online training"
+  img:
+    src: "assets/img/about/elearning.jpeg"
+    alt: "..."
+  link:
+    href: "http://opengeospatial.github.io/e-learning/ogcapi-features/text/basic-index.html"
+    title: "E-learning"
+    target: "_blank"
+  text:
+  - paragraph: "If you are familiar with web services and APIs, and want to have an overview of the OGC API - Features standard, this training is for you."
+- heading:
+    main-heading: "Follow a tutorial"
+  img:
+    src: "assets/img/about/sawcer.jpeg"
+    alt: "..."
+  link:
+    href: "https://dev.to/doublebyte/sharing-geospatial-data-with-ogc-api-pygeoapi-and-mongodb-4lo7"
+    title: "E-learning"
+    target: "_blank"
+  text:
+  - paragraph: "Implement a complete pipeline to make your data available with OGC API - Features, using a stack of free and open source software. A video version is available <a href=\"https://dev.to/doublebyte/how-to-share-geospatial-data-on-the-web-54b7\">here.</a>"
+- heading:
+    main-heading: "Get Involved"
+  icon: "fas fa-users-cog"
+  link:
+    href: "#getinvolved"
+    title: "Get Involved"

@@ -1,0 +1,6 @@
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">{{ include.content.main-heading }}</h2>
+            {%- if include.content.sub-heading -%}<h3 class="section-subheading text-muted">{{ include.content.sub-heading }}</h3>{%- endif -%}
+            {%- if include.content.img -%}<img src="{{ include.content.img.src }}" title="{{ include.content.img.title }}" alt="{{ include.content.img.alt }}" />{%- endif -%}
+            {%- include text-block.html content=include.content.text -%}
+        </div>

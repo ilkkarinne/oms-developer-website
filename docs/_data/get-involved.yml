@@ -1,0 +1,25 @@
+heading:
+  main-heading: "Get involved"
+  sub-heading: "Tell us what’s working well, what you want to see added or improved, and find out about new updates."
+items:
+- heading:
+    main-heading: "Stack Overflow"
+  text:
+  - paragraph: "Engage with your peers and ask questions about OGC API Features using the tag 'OGC API Features'"
+  icon: "fab fa-stack-overflow"
+  link:
+    href: "https://stackoverflow.com/search?q=ogc+api+feature"
+- heading:
+    main-heading: "Discord"
+  text:
+  - paragraph: "Chat with other OGC API Features users in the OGC Community channel."
+  icon: "fab fa-discord"
+  link:
+    href: "https://discord.gg/3uyaZZuXr3"
+- heading:
+    main-heading: "GitHub"
+  text:
+  - paragraph: "Found a bug, or want to give us constructive feedback?"
+  icon: "fab fa-github"
+  link:
+    href: "https://github.com/opengeospatial/ogcapi-features"

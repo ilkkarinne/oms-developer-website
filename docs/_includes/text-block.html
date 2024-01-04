@@ -1,0 +1,7 @@
+{%- if include.content -%}
+    {%- for c in include.content -%}
+        {%- if c.paragraph -%}
+<p class="text-muted {{ include.content.class }}">{{ c.paragraph }}</p>
+        {%- endif -%}
+    {%- endfor -%}
+{%- endif -%}

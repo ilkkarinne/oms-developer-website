@@ -1,0 +1,25 @@
+heading:
+  main-heading: "Who is behind OGC API Features?"
+introtext:
+- paragraph: "OGC API Features is developed through a member-driven consensus process, which creates royalty free, publicly available, open geospatial standards. The <a href=\"https://www.ogc.org/\">Open Geospatial Consortium (OGC)</a> is the organisation which drives this process. It is supported by an active community of members, with involvement from a large range of organizations, as well as smaller ones. <a href=\"https://www.ogc.org/ogc/join/levels\">Join OGC today!</a>"
+text:
+- paragraph: "The logos above are a small subset of all OGC members. They are either strategic/principal members, and/or organisations who implement products certified for OGC API Features."
+items:
+- link:
+    href: "https://www.interactive-instruments.de/en/"
+    title: "Interactive Instruments"
+  img:
+    src: "assets/img/logos/interactive-instruments.svg"
+    alt: "Interactive Instruments logo"
+- link:
+    href: "https://ecere.ca/"
+    title: "Ecere corporation"
+  img:
+    src: "assets/img/logos/ecere.svg"
+    alt: "Ecere logo"
+- link:
+    href: "https://www.ordnancesurvey.co.uk/"
+    title: "Ordnance Survey"
+  img:
+    src: "assets/img/logos/os.svg"
+    alt: "Ordnance Survey"

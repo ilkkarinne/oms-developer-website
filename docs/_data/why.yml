@@ -1,12 +1,19 @@
-heading: "Why?"
-sub-heading: "Main reasons for using OGC API Features."
+heading:
+  main-heading: "Why?"
+  sub-heading: "Main reasons for using OGC API Features."
 items:
-- heading: "Interoperable"
-  text: "Ensure that your application can read data from existing and new sources without changing how you communicate with them. Ensure that the data you share can be accessed by different clients, without having to share details of your implementation."
-  icon: "fa-plug"
-- heading: "Based on Best Practices"
-  text: "This API is based on the technologies and vocabularies that make up the web today, such as REST, OpenAPI, JSON and HTML. This should ensure a smooth learning curve for any web developer, even if they are not familiar with GIS."
-  icon: "fa-laptop-code"
-- heading: "Supported on Existing Products"
-  text: "You can start using the OGC API Features specification today, by tapping into one of the <a href=\"#implementations\">existing server or client implementations.</a>"
-  icon: "fa-layer-group"
+- heading:
+    main-heading: "Interoperable"
+  text:
+  - paragraph: "Ensure that your application can read data from existing and new sources without changing how you communicate with them. Ensure that the data you share can be accessed by different clients, without having to share details of your implementation."
+  icon: "fas fa-plug"
+- heading:
+    main-heading: "Based on Best Practices"
+  text:
+  - paragraph: "This API is based on the technologies and vocabularies that make up the web today, such as REST, OpenAPI, JSON and HTML. This should ensure a smooth learning curve for any web developer, even if they are not familiar with GIS."
+  icon: "fas fa-laptop-code"
+- heading:
+    main-heading: "Supported on Existing Products"
+  text:
+  - paragraph: "You can start using the OGC API Features specification today, by tapping into one of the <a href=\"#implementations\">existing server or client implementations.</a>"
+  icon: "fas fa-layer-group"
